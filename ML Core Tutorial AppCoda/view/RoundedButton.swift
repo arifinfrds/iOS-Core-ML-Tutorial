@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoundedButton: UIButton {
+@IBDesignable class RoundedButton: UIButton {
     
     var fontSize = CGFloat(15.0)
     var buttonHeight = CGFloat(50.0)

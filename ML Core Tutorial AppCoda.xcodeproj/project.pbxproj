@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		920B0A651F893A6100B730FE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920B0A641F893A6100B730FE /* RoundedButton.swift */; };
+		92240FA9200A4BFE007BDFE6 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92B689A31F86428700198A1D /* Inceptionv3.mlmodel */; };
 		923AF60D1F86286E00426079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923AF60C1F86286E00426079 /* AppDelegate.swift */; };
 		923AF60F1F86286E00426079 /* AppCodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923AF60E1F86286E00426079 /* AppCodaViewController.swift */; };
 		923AF6121F86286E00426079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923AF6101F86286E00426079 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		924485991F8786290038E505 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924485981F8786290038E505 /* Home.swift */; };
 		925F44BF1F86896F007D683D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F44BE1F86896F007D683D /* HomeViewController.swift */; };
 		929BE9771F86A70400670F1A /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929BE9761F86A70400670F1A /* HomeCell.swift */; };
-		92B689A41F8644CC00198A1D /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92B689A31F86428700198A1D /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +84,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92240FAE200A5265007BDFE6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				925F44BE1F86896F007D683D /* HomeViewController.swift */,
+				923AF60E1F86286E00426079 /* AppCodaViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		92240FAF200A5272007BDFE6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				923AF6101F86286E00426079 /* Main.storyboard */,
+				923AF6131F86286E00426079 /* Assets.xcassets */,
+				923AF6151F86286E00426079 /* LaunchScreen.storyboard */,
+				929BE9761F86A70400670F1A /* HomeCell.swift */,
+				920B0A641F893A6100B730FE /* RoundedButton.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		92240FB0200A527F007BDFE6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				924485981F8786290038E505 /* Home.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		923AF6001F86286E00426079 = {
 			isa = PBXGroup;
 			children = (
@@ -108,16 +137,11 @@
 		923AF60B1F86286E00426079 /* ML Core Tutorial AppCoda */ = {
 			isa = PBXGroup;
 			children = (
-				925F44BE1F86896F007D683D /* HomeViewController.swift */,
-				923AF60E1F86286E00426079 /* AppCodaViewController.swift */,
+				92240FB0200A527F007BDFE6 /* model */,
+				92240FAF200A5272007BDFE6 /* view */,
+				92240FAE200A5265007BDFE6 /* controller */,
 				923AF60C1F86286E00426079 /* AppDelegate.swift */,
-				923AF6101F86286E00426079 /* Main.storyboard */,
-				923AF6131F86286E00426079 /* Assets.xcassets */,
-				923AF6151F86286E00426079 /* LaunchScreen.storyboard */,
 				923AF6181F86286E00426079 /* Info.plist */,
-				929BE9761F86A70400670F1A /* HomeCell.swift */,
-				924485981F8786290038E505 /* Home.swift */,
-				920B0A641F893A6100B730FE /* RoundedButton.swift */,
 			);
 			path = "ML Core Tutorial AppCoda";
 			sourceTree = "<group>";
@@ -275,12 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				923AF60F1F86286E00426079 /* AppCodaViewController.swift in Sources */,
-				92B689A41F8644CC00198A1D /* Inceptionv3.mlmodel in Sources */,
 				923AF60D1F86286E00426079 /* AppDelegate.swift in Sources */,
 				925F44BF1F86896F007D683D /* HomeViewController.swift in Sources */,
 				920B0A651F893A6100B730FE /* RoundedButton.swift in Sources */,
 				924485991F8786290038E505 /* Home.swift in Sources */,
 				929BE9771F86A70400670F1A /* HomeCell.swift in Sources */,
+				92240FA9200A4BFE007BDFE6 /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

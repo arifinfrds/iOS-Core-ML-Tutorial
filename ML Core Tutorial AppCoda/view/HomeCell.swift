@@ -15,15 +15,26 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDetail: UILabel!
     
+    var dataSource: Home? {
+        didSet {
+            updateUI()
+        }
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // setupShadow()
-//        self.layer.cornerRadius = 10
-//        self.layer.masksToBounds = true
-//        self.layer.borderWidth = 0.2
-//        self.layer.borderColor = UIColor.gray.cgColor
+        //        self.layer.cornerRadius = 10
+        //        self.layer.masksToBounds = true
+        //        self.layer.borderWidth = 0.2
+        //        self.layer.borderColor = UIColor.gray.cgColor
+    }
     
+    func updateUI() {
+        self.labelTitle.text = dataSource?.title
+        self.labelDetail.text = dataSource?.detail
+        self.imageViewHeader.image = dataSource?.thumbnail
     }
     
     private func setupShadow() {

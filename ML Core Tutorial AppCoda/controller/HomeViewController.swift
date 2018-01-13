@@ -11,11 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     // MARK: - Properties
-    var models = [
-        Home(title: "Core ML", detail: "Inceptionv3.mlmodel by App Coda", thumbnail: #imageLiteral(resourceName: "core_ml_1")),
-        Home(title: "Vision", detail: "You can easily build computer vision machine learning features into your app. Supported features include face tracking, face detection, landmarks, text detection, rectangle detection, barcode detection, object tracking, and image registration.", thumbnail: #imageLiteral(resourceName: "core_ml_3")),
-        Home(title: "Natural Language Processing", detail: "The natural language processing APIs in Foundation use machine learning to deeply understand text using features such as language identification, tokenization, lemmatization, part of speech, and named entity recognition.", thumbnail: #imageLiteral(resourceName: "core_ml_3"))
-    ]
+    var models = Home.getDataSource()
     
     @IBOutlet var tableViewHome: UITableView!
     
@@ -80,10 +76,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewHome.dequeueReusableCell(withIdentifier: "home_cell", for: indexPath) as! HomeCell
-        cell.labelTitle.text = models[indexPath.row].title
-        cell.labelDetail.text = models[indexPath.row].detail
-        cell.imageViewHeader.image = models[indexPath.row].thumbnail
-        // setupHomeCell(cell: cell, indexPath: indexPath)
+        cell.dataSource = models[indexPath.row]
         return cell
     }
 }

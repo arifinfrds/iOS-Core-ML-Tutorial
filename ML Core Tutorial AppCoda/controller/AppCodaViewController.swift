@@ -101,8 +101,12 @@ extension AppCodaViewController: UIImagePickerControllerDelegate {
         guard let prediction = try? model.prediction(image: pixelBuffer!) else {
             return
         }
+        
+        dump(prediction.classLabelProbs)
+        
         if let accuracyPoint = prediction.classLabelProbs[prediction.classLabel] {
-            let formattedAccuracyPoint = String(format:"%.2f", accuracyPoint)
+            let accuracyPercentage = accuracyPoint * 100
+            let formattedAccuracyPoint = String(format:"%.2f", accuracyPercentage)
             labelClassifier.text = "It's probably a \(prediction.classLabel) with \(formattedAccuracyPoint) accuracy."
         }
         
