@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		920B0A651F893A6100B730FE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920B0A641F893A6100B730FE /* RoundedButton.swift */; };
-		92240FA9200A4BFE007BDFE6 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92B689A31F86428700198A1D /* Inceptionv3.mlmodel */; };
 		923AF60D1F86286E00426079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923AF60C1F86286E00426079 /* AppDelegate.swift */; };
 		923AF60F1F86286E00426079 /* AppCodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923AF60E1F86286E00426079 /* AppCodaViewController.swift */; };
 		923AF6121F86286E00426079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923AF6101F86286E00426079 /* Main.storyboard */; };
@@ -18,6 +17,7 @@
 		923AF62D1F86286E00426079 /* ML_Core_Tutorial_AppCodaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923AF62C1F86286E00426079 /* ML_Core_Tutorial_AppCodaUITests.swift */; };
 		924485991F8786290038E505 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924485981F8786290038E505 /* Home.swift */; };
 		925F44BF1F86896F007D683D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F44BE1F86896F007D683D /* HomeViewController.swift */; };
+		92622D73200A5370002846D0 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92622D71200A534C002846D0 /* Inceptionv3.mlmodel */; };
 		929BE9771F86A70400670F1A /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929BE9761F86A70400670F1A /* HomeCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +55,8 @@
 		923AF62E1F86286E00426079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		924485981F8786290038E505 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		925F44BE1F86896F007D683D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92622D71200A534C002846D0 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		929BE9761F86A70400670F1A /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
-		92B689A31F86428700198A1D /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +108,7 @@
 		92240FB0200A527F007BDFE6 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				92622D71200A534C002846D0 /* Inceptionv3.mlmodel */,
 				924485981F8786290038E505 /* Home.swift */,
 			);
 			path = model;
@@ -116,7 +117,6 @@
 		923AF6001F86286E00426079 = {
 			isa = PBXGroup;
 			children = (
-				92B689A31F86428700198A1D /* Inceptionv3.mlmodel */,
 				923AF60B1F86286E00426079 /* ML Core Tutorial AppCoda */,
 				923AF6201F86286E00426079 /* ML Core Tutorial AppCodaTests */,
 				923AF62B1F86286E00426079 /* ML Core Tutorial AppCodaUITests */,
@@ -304,7 +304,7 @@
 				920B0A651F893A6100B730FE /* RoundedButton.swift in Sources */,
 				924485991F8786290038E505 /* Home.swift in Sources */,
 				929BE9771F86A70400670F1A /* HomeCell.swift in Sources */,
-				92240FA9200A4BFE007BDFE6 /* Inceptionv3.mlmodel in Sources */,
+				92622D73200A5370002846D0 /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

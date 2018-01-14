@@ -12,7 +12,9 @@ import CoreML
 
 class AppCodaViewController: UIViewController, UINavigationControllerDelegate {
     
+    
     // MARK: - Properties
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labelClassifier: UILabel!
     
@@ -20,6 +22,7 @@ class AppCodaViewController: UIViewController, UINavigationControllerDelegate {
     
     
     // MARK: - View life cycle
+    
     override func viewWillAppear(_ animated: Bool) {
         model = Inceptionv3()
     }
@@ -29,7 +32,9 @@ class AppCodaViewController: UIViewController, UINavigationControllerDelegate {
         navigationItem.largeTitleDisplayMode = .never
     }
     
+    
     // MARK: - IBAction
+    
     @IBAction func btnGoToLinkDidTapped(_ sender: Any) {
         let url = URL(string: "https://www.appcoda.com/coreml-introduction/")
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)
@@ -58,7 +63,9 @@ class AppCodaViewController: UIViewController, UINavigationControllerDelegate {
     }
 }
 
+
 // MARK: - UIImagePickerControllerDelegate
+
 extension AppCodaViewController: UIImagePickerControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
