@@ -50,6 +50,11 @@ class HomeViewController: UIViewController {
                 let appCodaVC = segue.destination as! AppCodaViewController
                 appCodaVC.navigationItem.title = models[row].title
             }
+            
+            if segue.identifier == "segue_vision_view_controller" {
+                let visionVC = segue.destination as! VisionViewController
+                visionVC.navigationItem.title = models[row].title
+            }
         }
         
     }
@@ -91,6 +96,13 @@ extension HomeViewController: UITableViewDelegate {
             if (storyboard?.instantiateViewController(withIdentifier: "app_coda_view_controller") as?
                 AppCodaViewController) != nil {
                 performSegue(withIdentifier: "app_coda_segue", sender: self)
+            }
+        }
+        
+        if indexPath.row == 1 {
+            if (storyboard?.instantiateViewController(withIdentifier: "vision_view_controller") as?
+                VisionViewController) != nil {
+                performSegue(withIdentifier: "segue_vision_view_controller", sender: self)
             }
         }
     }

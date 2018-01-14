@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9En-Ll-6Ph">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9En-Ll-6Ph">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="65.217391304347828"/>
+            <point key="canvasLocation" x="106" y="-678"/>
         </scene>
         <!--Machine Learning-->
         <scene sceneID="sau-dH-6lx">
@@ -141,11 +141,29 @@
                     <connections>
                         <outlet property="tableViewHome" destination="8LB-5K-hVF" id="zh8-nY-cgz"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="app_coda_segue" id="pas-mx-F98"/>
+                        <segue destination="usj-QZ-tOC" kind="show" identifier="segue_vision_view_controller" id="ceF-Vo-Lwo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQR-KJ-OAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-661.60000000000002" y="66.11694152923539"/>
+        </scene>
+        <!--Vision View Controller-->
+        <scene sceneID="zJs-ww-wIX">
+            <objects>
+                <viewController storyboardIdentifier="vision_view_controller" id="usj-QZ-tOC" customClass="VisionViewController" customModule="ML_Core_Tutorial_AppCoda" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nVh-Hg-vHR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <connections>
+                        <outlet property="visionTableView" destination="nVh-Hg-vHR" id="6N6-eT-Egq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXA-gg-ti0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1jH-Ic-eFi">
