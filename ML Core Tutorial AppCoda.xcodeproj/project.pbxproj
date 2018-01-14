@@ -18,6 +18,9 @@
 		924485991F8786290038E505 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924485981F8786290038E505 /* Home.swift */; };
 		925F44BF1F86896F007D683D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F44BE1F86896F007D683D /* HomeViewController.swift */; };
 		92622D73200A5370002846D0 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92622D71200A534C002846D0 /* Inceptionv3.mlmodel */; };
+		926C69D4200C0A5400F8832C /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C69D3200C0A5400F8832C /* VisionViewController.swift */; };
+		926C69D7200C0B3100F8832C /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C69D5200C0B3100F8832C /* BaseCell.swift */; };
+		926C69D8200C0B3100F8832C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926C69D6200C0B3100F8832C /* BaseCell.xib */; };
 		929BE9771F86A70400670F1A /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929BE9761F86A70400670F1A /* HomeCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		924485981F8786290038E505 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		925F44BE1F86896F007D683D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		92622D71200A534C002846D0 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		926C69D3200C0A5400F8832C /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		926C69D5200C0B3100F8832C /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		926C69D6200C0B3100F8832C /* BaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
 		929BE9761F86A70400670F1A /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,7 @@
 			children = (
 				925F44BE1F86896F007D683D /* HomeViewController.swift */,
 				923AF60E1F86286E00426079 /* AppCodaViewController.swift */,
+				926C69D3200C0A5400F8832C /* VisionViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -101,6 +108,8 @@
 				923AF6151F86286E00426079 /* LaunchScreen.storyboard */,
 				929BE9761F86A70400670F1A /* HomeCell.swift */,
 				920B0A641F893A6100B730FE /* RoundedButton.swift */,
+				926C69D5200C0B3100F8832C /* BaseCell.swift */,
+				926C69D6200C0B3100F8832C /* BaseCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926C69D8200C0B3100F8832C /* BaseCell.xib in Resources */,
 				923AF6171F86286E00426079 /* LaunchScreen.storyboard in Resources */,
 				923AF6141F86286E00426079 /* Assets.xcassets in Resources */,
 				923AF6121F86286E00426079 /* Main.storyboard in Resources */,
@@ -302,6 +312,8 @@
 				923AF60D1F86286E00426079 /* AppDelegate.swift in Sources */,
 				925F44BF1F86896F007D683D /* HomeViewController.swift in Sources */,
 				920B0A651F893A6100B730FE /* RoundedButton.swift in Sources */,
+				926C69D7200C0B3100F8832C /* BaseCell.swift in Sources */,
+				926C69D4200C0A5400F8832C /* VisionViewController.swift in Sources */,
 				924485991F8786290038E505 /* Home.swift in Sources */,
 				929BE9771F86A70400670F1A /* HomeCell.swift in Sources */,
 				92622D73200A5370002846D0 /* Inceptionv3.mlmodel in Sources */,
