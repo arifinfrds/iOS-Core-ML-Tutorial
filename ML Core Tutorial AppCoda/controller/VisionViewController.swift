@@ -42,7 +42,11 @@ class VisionViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "segue_vision_detail_view_controller" {
+            if let visionDetailVC = segue.destination as? VisionDetailViewController {
+                visionDetailVC.navigationItem.title = "Face Detection"
+            }
+        }
     }
     
 }
@@ -66,6 +70,7 @@ extension VisionViewController: UITableViewDelegate {
         return CGFloat(50)
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segue_vision_detail_view_controller", sender: nil)
     }
 }
 

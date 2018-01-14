@@ -21,6 +21,7 @@
 		926C69D4200C0A5400F8832C /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C69D3200C0A5400F8832C /* VisionViewController.swift */; };
 		926C69D7200C0B3100F8832C /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C69D5200C0B3100F8832C /* BaseCell.swift */; };
 		926C69D8200C0B3100F8832C /* BaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926C69D6200C0B3100F8832C /* BaseCell.xib */; };
+		926C6C28200C120A009AA90A /* VisionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926C6C27200C120A009AA90A /* VisionDetailViewController.swift */; };
 		929BE9771F86A70400670F1A /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929BE9761F86A70400670F1A /* HomeCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		926C69D3200C0A5400F8832C /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		926C69D5200C0B3100F8832C /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		926C69D6200C0B3100F8832C /* BaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseCell.xib; sourceTree = "<group>"; };
+		926C6C27200C120A009AA90A /* VisionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDetailViewController.swift; sourceTree = "<group>"; };
 		929BE9761F86A70400670F1A /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				925F44BE1F86896F007D683D /* HomeViewController.swift */,
 				923AF60E1F86286E00426079 /* AppCodaViewController.swift */,
 				926C69D3200C0A5400F8832C /* VisionViewController.swift */,
+				926C6C27200C120A009AA90A /* VisionDetailViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				923AF60F1F86286E00426079 /* AppCodaViewController.swift in Sources */,
 				923AF60D1F86286E00426079 /* AppDelegate.swift in Sources */,
+				926C6C28200C120A009AA90A /* VisionDetailViewController.swift in Sources */,
 				925F44BF1F86896F007D683D /* HomeViewController.swift in Sources */,
 				920B0A651F893A6100B730FE /* RoundedButton.swift in Sources */,
 				926C69D7200C0B3100F8832C /* BaseCell.swift in Sources */,

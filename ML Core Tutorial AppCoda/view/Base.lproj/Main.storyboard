@@ -159,11 +159,88 @@
                     </tableView>
                     <connections>
                         <outlet property="visionTableView" destination="nVh-Hg-vHR" id="6N6-eT-Egq"/>
+                        <segue destination="cjs-z6-uEX" kind="show" identifier="segue_vision_detail_view_controller" id="pkJ-12-vJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXA-gg-ti0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105" y="66"/>
+        </scene>
+        <!--Vision Detail View Controller-->
+        <scene sceneID="gXb-3k-rFr">
+            <objects>
+                <viewController storyboardIdentifier="vision_detaill_view_controller" id="cjs-z6-uEX" customClass="VisionDetailViewController" customModule="ML_Core_Tutorial_AppCoda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fdV-HT-WEE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="19p-jE-CQd">
+                                <rect key="frame" x="38" y="27" width="299" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299" id="7M4-8m-8EB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299" id="IDf-gS-FBj"/>
+                                    <constraint firstAttribute="height" constant="299" id="eS2-7J-maP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="299" id="zUK-lj-GpI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZz-EW-DOf">
+                                <rect key="frame" x="125" y="546" width="124" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="HdE-Mq-DN6"/>
+                                    <constraint firstAttribute="height" constant="29" id="Txd-IX-nF7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="eNF-8e-WVH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="See tutorial"/>
+                                <connections>
+                                    <action selector="btnGoToLinkDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SXt-fM-Qo1"/>
+                                    <action selector="buttonSeeTutorialPressed:" destination="cjs-z6-uEX" eventType="touchUpInside" id="bBV-Nu-i0E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Image Found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQs-J3-Du0">
+                                <rect key="frame" x="16" y="346" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tQs-J3-Du0" firstAttribute="top" secondItem="19p-jE-CQd" secondAttribute="bottom" constant="20" id="67X-wi-RFr"/>
+                            <constraint firstItem="zlc-bF-ENS" firstAttribute="trailing" secondItem="19p-jE-CQd" secondAttribute="trailing" constant="38" id="Hp2-9V-npu"/>
+                            <constraint firstItem="kZz-EW-DOf" firstAttribute="leading" secondItem="zlc-bF-ENS" secondAttribute="leading" constant="125" id="JTP-li-HXG"/>
+                            <constraint firstItem="zlc-bF-ENS" firstAttribute="trailing" secondItem="tQs-J3-Du0" secondAttribute="trailing" constant="16" id="Ken-zO-7Mt"/>
+                            <constraint firstItem="tQs-J3-Du0" firstAttribute="leading" secondItem="zlc-bF-ENS" secondAttribute="leading" constant="16" id="QvZ-aT-9yc"/>
+                            <constraint firstItem="zlc-bF-ENS" firstAttribute="trailing" secondItem="kZz-EW-DOf" secondAttribute="trailing" constant="126" id="RlE-uT-25C"/>
+                            <constraint firstItem="19p-jE-CQd" firstAttribute="leading" secondItem="zlc-bF-ENS" secondAttribute="leading" constant="38" id="Ugu-09-EgW"/>
+                            <constraint firstItem="19p-jE-CQd" firstAttribute="top" secondItem="zlc-bF-ENS" secondAttribute="top" constant="27" id="eKr-k9-ViM"/>
+                            <constraint firstItem="tQs-J3-Du0" firstAttribute="top" secondItem="19p-jE-CQd" secondAttribute="bottom" constant="20" id="gdB-w0-D1t"/>
+                            <constraint firstItem="zlc-bF-ENS" firstAttribute="bottom" secondItem="kZz-EW-DOf" secondAttribute="bottom" constant="28" id="xUE-wO-AnQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zlc-bF-ENS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Kw-Pv-cZz">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Library" id="oLq-LU-K8C">
+                                <connections>
+                                    <action selector="libraryPressed:" destination="cjs-z6-uEX" id="67n-uF-rgT"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="6jB-bS-RoW">
+                                <connections>
+                                    <action selector="cameraPressed:" destination="cjs-z6-uEX" id="4Eb-c5-BSi"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="classifierLabel" destination="tQs-J3-Du0" id="jQ3-FO-Fbo"/>
+                        <outlet property="imageView" destination="19p-jE-CQd" id="dtL-QD-QJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxC-dB-UNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="64"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1jH-Ic-eFi">
